@@ -6,12 +6,12 @@
         "chris-cooling"
     ],
     "tags": [
-        "software engineering"
+        "software-engineering"
     ],
     "duration": 3,
     "prerequisites": [
         "json-nested-arrays-and-objects",
-        "programming-containers"
+        "software-engineering-container-images"
     ],
     "related": [
     ]
