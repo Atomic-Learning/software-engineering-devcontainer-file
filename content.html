@@ -13,7 +13,7 @@
 
 <h2>Minimal Contents</h2>
 
-<p>At the top level, <code>devcontainer.json</code> is a JSON object. A practical minimum is an environment source, most commonly the <code>image</code> property. This is specified as an image reference (for example, <code>mcr.microsoft.com/devcontainers/base:ubuntu</code>), typically from Microsoft Container Registry, Docker Hub, or a private registry.</p>
+<p>At the top level, <code>devcontainer.json</code> is a JSON object. A practical minimum is an environment source, most commonly the <code>image</code> property. This is specified as an image reference (for example, <code>mcr.microsoft.com/devcontainers/base:ubuntu</code>), typically from Microsoft Container Registry, Docker Hub, or a private registry. When a pre-built image is used, the container is created by pulling that image from the registry rather than building one from scratch, which is generally faster to set up.</p>
 
 <p>The <code>name</code> property is recommended for readability but is not strictly required in every setup.</p>
 
