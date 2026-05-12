@@ -1,1 +1,25 @@
+<p>A dev container file is a JSON configuration file, usually named <code>devcontainer.json</code>, stored in a project's <code>.devcontainer</code> folder. It defines how a development container should be created and configured for that project.</p>
 
+<h2>Use cases</h2>
+
+<p>The <code>devcontainer.json</code> file tells tooling (for example, VS Code Dev Containers or GitHub Codespaces) how to create a consistent development environment. Common options to specify include:</p>
+
+<ul>
+  <li>which container image or build definition to use</li>
+  <li>which editor extensions and settings to apply</li>
+  <li>how apps running in the container can be accessed from the host machine</li>
+  <li>which setup commands to run after container creation</li>
+</ul>
+
+<h2>Minimal Contents</h2>
+
+<p>At the top level, <code>devcontainer.json</code> is a JSON object. A practical minimum is an environment source, most commonly the <code>image</code> property. This is specified as an image reference (for example, <code>mcr.microsoft.com/devcontainers/base:ubuntu</code>), typically from Microsoft Container Registry, Docker Hub, or a private registry.</p>
+
+<p>The <code>name</code> property is recommended for readability but is not strictly required in every setup.</p>
+
+<p>The following is an example of a simple <code>devcontainer.json</code> file, including the optional name property:</p>
+
+<pre><code class="language-json">{
+  "name": "My Development Container",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu"
+}</code></pre>
